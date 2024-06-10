@@ -2,7 +2,7 @@
         <div class="flex flex-col lg:flex-row items-center lg:justify-between ">
             <div class="flex items-center">
                 <div class="rounded-full p-1">
-                    <h1 class="text-2xl font-bold">Transaction Detail:</h1>
+                    <h1 class="text-2xl font-bold">Transaction-Details:</h1>
                 </div>
                 <div>
                     <p class="text-2xl font-medium pl-2"> {{$transaction->transaction_title}}</p>
