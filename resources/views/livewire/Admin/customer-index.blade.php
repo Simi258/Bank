@@ -7,7 +7,7 @@
         <form method="GET" class="flex lg:block lg:mt-4">
             <div class="flex items-center lg:flex-row lg:justify-between lg:w-full">
                 <div class="lg:w-64 ">
-                    <input name="search" wire:model.live="search" wire:click="$refresh" type="search" class="px-4 py-2 border rounded-l-full w-full lg:block lg:mr-2" placeholder="Search employers...">
+                    <input name="search" wire:model.live="search" wire:click="$refresh" type="search" class="px-4 py-2 border rounded-l-full w-full lg:block lg:mr-2" placeholder="Search customers...">
                 </div>
                 <div class="lg:w-auto">
                     <button type="submit" class="px-2 py-1 border rounded-r-full bg-indigo-500 text-white sm:px-4 sm:py-2">Search</button>
