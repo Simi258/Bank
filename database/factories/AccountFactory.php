@@ -1,0 +1,33 @@
+<?php
+
+namespace Database\Factories;
+
+use App\Models\Account;
+use App\Models\User;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
+ */
+class AccountFactory extends Factory
+{
+
+    protected $model = Account::class;
+
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'users_id' => User::factory(),
+            'iban'=> fake()->unique()->iban( ),
+            'pin'=> fake()->unique()->numerify,
+            'bank_balance'=> fake()->numerify(),
+        ];
+    }
+};
